@@ -2,8 +2,8 @@
 
 import pandas as pd
 import math
-import scipy
-import scipy.stats
+# import scipy
+# import scipy.stats
 
 #C'est la partie la plus importante dans l'analyse de données. D'une part, elle n'est pas simple à comprendre tant mathématiquement que pratiquement. D'autre, elle constitue une application des probabilités. L'idée consiste à comparer une distribution de probabilité (théorique) avec des observations concrètes. De fait, il faut bien connaître les distributions vues dans la séance précédente afin de bien pratiquer cette comparaison. Les probabilités permettent de définir une probabilité critique à partir de laquelle les résultats ne sont pas conformes à la théorie probabiliste.
 #Il n'est pas facile de proposer des analyses de données uniquement dans un cadre univarié. Vous utiliserez la statistique inférentielle principalement dans le cadre d'analyses multivariées. La statistique univariée est une statistique descriptive. Bien que les tests y soient possibles, comprendre leur intérêt et leur puissance d'analyse dans un tel cadre peut être déroutant.
@@ -19,7 +19,7 @@ def ouvrirUnFichier(nom):
 #L'échantillonnage se base sur la répétitivité.
 print("Résultat sur le calcul d'un intervalle de fluctuation")
 
-donnees = pd.DataFrame(ouvrirUnFichier("./data/Echantillonnage-100-Echantillons.csv"))
+donnees = pd.DataFrame(ouvrirUnFichier("src/data/Echantillonnage-100-Echantillons.csv"))
 
 #Théorie de l'estimation (intervalles de confiance)
 #L'estimation se base sur l'effectif.
